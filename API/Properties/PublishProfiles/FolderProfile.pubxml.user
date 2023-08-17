@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <_PublishTargetUrl>D:\Dev\Games\ApiCSharpCRUD\API\bin\Release\net6.0\publish\</_PublishTargetUrl>
+    <History>False|2023-08-17T13:56:32.2113737Z;True|2023-08-17T10:53:40.8415022-03:00;True|2023-08-17T10:47:23.3144331-03:00;True|2023-08-17T10:36:43.3065490-03:00;True|2023-08-17T10:23:33.1608648-03:00;True|2023-08-17T04:17:09.3240258-03:00;True|2023-08-17T02:15:58.5513895-03:00;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+</Project>

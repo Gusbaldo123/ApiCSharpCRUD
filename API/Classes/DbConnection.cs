@@ -1,5 +1,4 @@
 ﻿using MySqlConnector;
-using System.Reflection.PortableExecutable;
 
 namespace API.Classes
 {
@@ -13,7 +12,7 @@ namespace API.Classes
         MySqlConnection conn;
 
         public void SqlConnect()
-        { 
+        {
             conn = new MySqlConnection($"Server={host};User ID={user};Password={password};Database={dbname}");
         }
         public async Task<bool> SqlQueryAsync(string _sqlCommand)
@@ -41,7 +40,7 @@ namespace API.Classes
             MySqlCommand commandSql = new MySqlCommand(_sqlSelect, conn);
             MySqlDataReader commReader = await commandSql.ExecuteReaderAsync();
 
-            List< Person > persons = new List< Person >();
+            List<Person> persons = new List<Person>();
             while (await commReader.ReadAsync())
             {
                 Object[] values = new Object[commReader.FieldCount];

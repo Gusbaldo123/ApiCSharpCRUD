@@ -72,7 +72,17 @@
         }
         public static string SelectPersonSQL(Person _person)
         {
-            return $"select * from Person where id = {_person.Id}";
+            bool nameEmpty = string.IsNullOrEmpty(_person.Name);
+            bool idNumberEmpty = string.IsNullOrEmpty(_person.idNumber);
+
+            if (nameEmpty && idNumberEmpty)
+                return SelectAllPersonSQL();
+            else if (!idNumberEmpty && !idNumberEmpty)
+                return $"SELECT * FROM `person` WHERE idNumber like '%{_person.idNumber}%' and name like '%{_person.name}%'";
+            else if (!nameEmpty && idNumberEmpty)
+                return $"SELECT * FROM `person` WHERE name like '%{_person.name}%'";
+            else
+                return $"SELECT * FROM `person` WHERE idNumber like '%{_person.idNumber}%'";
         }
         public static string InsertPersonSQL(Person _person)
         {

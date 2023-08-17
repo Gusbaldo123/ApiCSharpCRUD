@@ -1,5 +1,4 @@
 ﻿using API.Classes;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace API.Controllers
@@ -8,6 +7,7 @@ namespace API.Controllers
     [ApiController]
     public class RestController : ControllerBase
     {
+        // POST api/Rest
         [HttpPost]
         public async Task<Rest> PostAsync([FromBody] Person person)
         {
@@ -26,16 +26,23 @@ namespace API.Controllers
                     break;
 
                 case PersonAction.Insert:
+
+                    if (string.IsNullOrEmpty(person.Name) || string.IsNullOrEmpty(person.Email) || string.IsNullOrEmpty(person.IdNumber) || string.IsNullOrEmpty(person.ZIPCode))
+                        return new Rest() { Success = false, Data = "Missing informations" };
+
                     bool checkIdent = Person.CheckIdentNumber(person.IdNumber, person.Entity);
                     bool checkZip = Person.CheckZipCode(person.ZIPCode);
 
-                    if(!checkIdent || !checkZip)
+                    if (!checkIdent || !checkZip)
                         return new Rest() { Success = false, Data = "Identification or Zipcode wrong" };
 
                     sql = Person.InsertPersonSQL(person);
                     break;
 
                 case PersonAction.Update:
+                    if (string.IsNullOrEmpty(person.Name) || string.IsNullOrEmpty(person.Email) || string.IsNullOrEmpty(person.IdNumber) || string.IsNullOrEmpty(person.ZIPCode))
+                        return new Rest() { Success = false, Data = "Missing informations" };
+
                     sql = Person.UpdatePersonSQL(person);
                     break;
 
@@ -46,6 +53,8 @@ namespace API.Controllers
                 default:
                     return new Rest() { Success = false, Data = "Something went wrong" };
             }
+
+            
 
             bool success;
             object data;

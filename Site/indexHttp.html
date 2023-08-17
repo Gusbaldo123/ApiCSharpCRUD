@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script src="Scripts\jquery-3.7.0.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Crud</title>
+</head>
+<body>
+    <div id="formPerson">
+        <h3 id="titleFormPerson">Dados da pessoa</h3>
+        <div id="fieldFormPerson">
+            <label for="name" id="lblName">Nome completo</label>
+            <input type="text" id="name" name="name">
+    
+            <label for="email" id="lblEmail">E-mail</label>
+            <input type="text" id="email" name="email">
+    
+            <label for="typeEntity">Tipo da pessoa</label>
+            <select name="typeEntity" id="typeEntity">
+                <option value="0" selected>Pessoa física</option>
+                <option value="1">Pessoa jurídica</option>
+            </select><br>
+    
+            <label for="idNumber" id="lblIdNumber">CPF</label>
+            <input type="text" id="idNumber" name="idNumber">
+    
+            <label for="zipCode" id="lblZipCode">CEP</label>
+            <input type="text" id="zipCode" name="zipCode">
+    
+            <label for="address" id="lblAddress" disabled="true">Endereço</label>
+            <input type="text" id="address" name="address" disabled>
+    
+            <label for="publicArea" id="lblPublicArea">Logradouro</label>
+            <input type="text" id="publicArea" name="publicArea" disabled>
+    
+            <label for="district" id="lblDistrict">Bairro</label>
+            <input type="text" id="district" name="district" disabled>
+    
+            <label for="city" id="lblCity">Cidade</label>
+            <input type="text" id="city" name="city" disabled>
+    
+            <label for="state" id="lblState">Estado</label>
+            <select name="state" id="state" disabled>
+                <option selected><option>
+                <option>AC</option>
+                <option>AL</option>
+                <option>AP</option>
+                <option>AM</option>
+                <option>BA</option>
+                <option>CE</option>
+                <option>DF</option>
+                <option>ES</option>
+                <option>GO</option>
+                <option>MA</option>
+                <option>MT</option>
+                <option>MS</option>
+                <option>MG</option>
+                <option>PA</option>
+                <option>PB</option>
+                <option>PR</option>
+                <option>PE</option>
+                <option>PI</option>
+                <option>RJ</option>
+                <option>RN</option>
+                <option>RS</option>
+                <option>RO</option>
+                <option>RR</option>
+                <option>SC</option>
+                <option>SP</option>
+                <option>SE</option>
+                <option>TO</option>
+            </select><br>
+            <div id="divSubmitField">
+                <div id="divSubmit">
+                    <button id="btCancelFormPerson">Cancelar</button>
+                    <div id="divBtShareSpace">
+                        <button id="btSubmitFormPerson">Gravar</button>
+                        <button id="btSubmitEditFormPerson">Editar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="listPerson">
+        <h3 id="titleListPerson">Cadastro de pessoas</h3>
+        <div id="divTitleFilterPerson">
+            <h4 id="titleFilterPerson">Pesquisa</h4>
+        </div>
+        <div id="filterPerson">
+            <label for="nameFilter">Nome</label>
+            <input type="text" id="nameFilter" name="nameFilter">
+            <label for="idNumberFilter">CPF</label>
+            <input type="text" id="idNumberFilter" name="idNumberFilter">
+            <button id="btSubmitFilter">Filtrar</button>
+        </div>
+        <div id="listShownPerson">
+            <table id="tableListShownPerson">
+                <tr>
+                  <th>Nome</button></th>
+                  <th>CPF</button></th>
+                  <th>Email</button></th>
+                  <th>Opções</th>
+                </tr>
+              </table>
+        </div>
+    </div>
+    <script src="igorescobar-jQuery-Mask-Plugin-535b4e4\jquery.mask.js"></script>
+    <script src="Scripts\viacepFormCep.js"></script>
+    <script src="Scripts\eventsHttp.js"></script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+D:\Dev\Games\ApiCSharpCRUD\API\obj\Release\net6.0\PubTmp\Out\API.exe
+D:\Dev\Games\ApiCSharpCRUD\API\obj\Release\net6.0\PubTmp\Out\appsettings.Development.json
+D:\Dev\Games\ApiCSharpCRUD\API\obj\Release\net6.0\PubTmp\Out\appsettings.json
+D:\Dev\Games\ApiCSharpCRUD\API\obj\Release\net6.0\PubTmp\Out\API.dll
+D:\Dev\Games\ApiCSharpCRUD\API\obj\Release\net6.0\PubTmp\Out\API.deps.json
+D:\Dev\Games\ApiCSharpCRUD\API\obj\Release\net6.0\PubTmp\Out\API.runtimeconfig.json
+D:\Dev\Games\ApiCSharpCRUD\API\obj\Release\net6.0\PubTmp\Out\API.pdb
+D:\Dev\Games\ApiCSharpCRUD\API\obj\Release\net6.0\PubTmp\Out\Microsoft.OpenApi.dll
+D:\Dev\Games\ApiCSharpCRUD\API\obj\Release\net6.0\PubTmp\Out\MySqlConnector.dll
+D:\Dev\Games\ApiCSharpCRUD\API\obj\Release\net6.0\PubTmp\Out\Swashbuckle.AspNetCore.Swagger.dll
+D:\Dev\Games\ApiCSharpCRUD\API\obj\Release\net6.0\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\Dev\Games\ApiCSharpCRUD\API\obj\Release\net6.0\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerUI.dll
