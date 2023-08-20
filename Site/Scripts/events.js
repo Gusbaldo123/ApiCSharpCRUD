@@ -1,5 +1,3 @@
-var localhost = 'https://localhost:5001/api/Rest';
-
 function SelectAllPerson(callback)
 {
   var personObj = {
@@ -177,13 +175,13 @@ function SetupButtons(element, arrRow)
   var row = $("<tr>");
   row.attr("id", "customRow").appendTo($("#tableListShownPerson"));
 
-  $("<th>").text(arrRow[0]).appendTo(row);
-  $("<th>").text(arrRow[1]).appendTo(row);
-  $("<th>").text(arrRow[2]).appendTo(row);
-  var th = $("<th>");
-  th.appendTo(row);
+  $("<td>").text(arrRow[0]).appendTo(row);
+  $("<td>").text(arrRow[1]).appendTo(row);
+  $("<td>").text(arrRow[2]).appendTo(row);
+  var td = $("<td>");
+  td.appendTo(row);
   var bt = $("<button>");
-  bt.attr("id", "btOption").appendTo(th);
+  bt.attr("id", "btOption").appendTo(td);
 
   bt.on( "click", function(e) {
     $("#btSubmitFormPerson").show();

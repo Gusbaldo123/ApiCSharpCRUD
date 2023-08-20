@@ -14,7 +14,6 @@ namespace API.Controllers
             DbConnection db = new DbConnection();
             string sql = string.Empty;
             List<Person>? results = null;
-
             switch (person.PersonAction)
             {
                 case PersonAction.SelectAll:

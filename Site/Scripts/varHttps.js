@@ -1,0 +1,1 @@
+var localhost = 'https://localhost:5001/api/Rest';
